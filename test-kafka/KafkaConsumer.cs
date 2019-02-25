@@ -29,12 +29,11 @@ namespace testkafka
 
         private Dictionary<string, object> CreateConsumersConfiguration()
         {
-            Dictionary<string, object> config = new Dictionary<string, object>();
-            config.Add("group.id", "test-consumer14");
-            config.Add("bootstrap.servers", "localhost:9092");
-            config.Add("auto.offset.reset", "earliest");
-            config.Add("enable.auto.commit", false);
-            return config;
+            Dictionary<string, object> configuration = new Dictionary<string, object>();
+            configuration.Add("group.id", "test-consumer16");
+            configuration.Add("bootstrap.servers", "localhost:9092");
+            configuration.Add("auto.offset.reset", "earliest");
+            return configuration;
         }
 
         private List<Consumer> CreateConsumers(Dictionary<string, object> configuration)

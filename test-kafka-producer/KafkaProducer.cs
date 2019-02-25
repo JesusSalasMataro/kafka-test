@@ -15,7 +15,7 @@ namespace testkafkaproducer
 
             while (message != "quit")
             {
-                Console.WriteLine("Introduce un mensaje: ");
+                Console.WriteLine("Enter a message: ");
                 message = Console.ReadLine();
                 producer.ProduceAsync(
                     topic: "test",
